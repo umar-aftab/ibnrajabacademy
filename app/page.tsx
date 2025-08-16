@@ -2,8 +2,8 @@
 
 import React, { useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Book, Feather, Users, Calendar, Globe, ArrowRight, BookOpen, Scroll, Heart, Star, CheckCircle, Mail, ExternalLink } from "lucide-react";
-
+import { Book, Feather, Users, Globe, ArrowRight, BookOpen, Scroll, Heart, Star, CheckCircle, Mail, ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 const LOGO_SRC = "/logo.jpeg"; 
 
@@ -18,7 +18,7 @@ function ParallaxLayer({ speed = -100, children, className = "" }: { speed?: num
   );
 }
 
-function CourseCard({ icon: Icon, title, description, topics }: { icon: any; title: string; description: string; topics: string[] }) {
+function CourseCard({ icon: Icon, title, description, topics }: { icon: React.ComponentType<{ className?: string }>; title: string; description: string; topics: string[] }) {
   return (
     <motion.div 
       initial={{ opacity: 0, y: 20 }} 
@@ -127,7 +127,7 @@ export default function Page() {
       <header className="sticky top-0 z-50 backdrop-blur-lg supports-[backdrop-filter]:bg-ibn-cream/80 bg-ibn-cream/90 border-b border-ibn-brown/10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <img src={LOGO_SRC} alt="Ibn Rajab Academy" className="h-12 w-auto" />
+            <Image src={LOGO_SRC} alt="Ibn Rajab Academy" className="h-12 w-auto" width={48} height={48} />
             <div className="hidden sm:block">
               <div className="font-bold text-lg tracking-wider text-ibn-brown">IBN RAJAB</div>
               <div className="text-xs tracking-[0.3em] text-ibn-accent">ACADEMY</div>
@@ -183,7 +183,7 @@ export default function Page() {
             </h1>
             
             <p className="text-lg text-ibn-brown/70 max-w-2xl mx-auto mb-10">
-              Join Ibn Rajab Academy's premium online madrasa. Learn Qur'an, Arabic, and Islamic sciences 
+              Join Ibn Rajab Academy&apos;s premium online madrasa. Learn Qur&apos;an, Arabic, and Islamic sciences 
               from qualified instructors in an engaging, interactive environment.
             </p>
             
@@ -436,7 +436,7 @@ export default function Page() {
         </div>
       </section>
 
-            {/* SPONSORSHIP SECTION */}
+      {/* SPONSORSHIP SECTION */}
       <section className="relative py-24 md:py-32 bg-gradient-to-b from-ibn-cream to-white">
         <div className="mx-auto max-w-5xl px-6">
           <motion.div 
@@ -476,7 +476,7 @@ export default function Page() {
               
               <div className="text-ibn-brown/70 mb-6">
                 <p className="text-sm italic">
-                  "The best of people are those who are most beneficial to others." - Prophet Muhammad ﷺ
+                  &ldquo;The best of people are those who are most beneficial to others.&rdquo; - Prophet Muhammad ﷺ
                 </p>
               </div>
               
@@ -502,7 +502,7 @@ export default function Page() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
-              <img src={LOGO_SRC} alt="Ibn Rajab Academy" className="h-10 w-auto opacity-80" />
+              <Image src={LOGO_SRC} alt="Ibn Rajab Academy" className="h-10 w-auto opacity-80" width={40} height={40} />
               <div>
                 <div className="text-sm text-ibn-cream/70">© {year} Ibn Rajab Academy</div>
                 <div className="text-xs text-ibn-cream/50">A subsidiary of 9alam Developments Inc.</div>
