@@ -141,7 +141,7 @@ export default function Page() {
             <a href="#enroll" className="text-ibn-brown/70 hover:text-ibn-brown transition-colors">Enroll</a>
           </nav>
           <a 
-            href="https://skool.com/ibn-rajab-academy-5287" 
+            href="https://t.me/ibnrajabacademy" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm bg-ibn-brown text-ibn-cream px-5 py-2.5 rounded-full hover:bg-ibn-brown-dark transition-colors shadow-md"
@@ -189,7 +189,7 @@ export default function Page() {
             
             <div className="flex flex-wrap gap-4 justify-center">
               <a 
-                href="https://skool.com/ibn-rajab-academy-5287" 
+                href="https://t.me/ibnrajabacademy" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-ibn-brown text-ibn-cream px-8 py-4 rounded-full text-base font-medium hover:bg-ibn-brown-dark transition-all transform hover:scale-105 shadow-lg"
@@ -296,7 +296,7 @@ export default function Page() {
                     "Small cohort sizes for personalized attention",
                     "Regular assessments and progress tracking",
                     "Office hours for additional support",
-                    "Community engagement through Skool platform"
+                    "Community engagement through our Telegram community"
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-3">
                       <CheckCircle className="h-5 w-5 text-ibn-accent flex-shrink-0" />
@@ -347,13 +347,13 @@ export default function Page() {
               className="text-ibn-brown/70"
             >
               Our teachers hold ijāzāt and have years of experience in traditional Islamic education. 
-              Led by Ustādh Tayyib Mohammad, our team ensures authentic knowledge transmission.
+              Led by Ustādh Abu Hafs Umar, our team ensures authentic knowledge transmission.
             </motion.p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { name: "Ustādh Tayyib Mohammad", role: "Lead Instructor", specialties: "Qur'an, Arabic, Fiqh" },
+              { name: "Ustādh Abu Hafs Umar", role: "Lead Instructor", specialties: "Qur'an, Arabic, Fiqh" },
               { name: "Guest Instructors", role: "Specialized Topics", specialties: "Various Islamic Sciences" },
               { name: "Teaching Assistants", role: "Student Support", specialties: "Office Hours & Mentorship" }
             ].map((instructor, i) => (
@@ -395,7 +395,7 @@ export default function Page() {
             transition={{ delay: 0.1 }}
             className="text-ibn-cream/80 max-w-2xl mx-auto mb-10"
           >
-            Join our vibrant community on Skool and start learning from qualified instructors. 
+            Join our vibrant Telegram community and start learning from qualified instructors. 
             New cohorts begin monthly with flexible scheduling options.
           </motion.p>
           
@@ -407,12 +407,12 @@ export default function Page() {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <a 
-              href="https://skool.com/ibn-rajab-academy-5287" 
+              href="https://t.me/ibnrajabacademy" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-ibn-cream text-ibn-brown px-8 py-4 rounded-full text-base font-semibold hover:bg-white transition-all transform hover:scale-105 shadow-xl"
             >
-              Enroll on Skool
+              Join Telegram Community
               <ExternalLink className="h-5 w-5" />
             </a>
             <a 
@@ -513,12 +513,12 @@ export default function Page() {
                 info@ibnrajabacademy.com
               </a>
               <a 
-                href="https://skool.com/ibn-rajab-academy-5287" 
+                href="https://t.me/ibnrajabacademy" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-ibn-cream/60 hover:text-ibn-cream transition-colors inline-flex items-center gap-1"
               >
-                Join on Skool
+                Join Telegram
                 <ExternalLink className="h-3 w-3" />
               </a>
             </div>
